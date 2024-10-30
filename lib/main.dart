@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:latihan1/InputAndSelection.dart';
+import 'package:latihan1/challenge.dart';
+import 'package:latihan1/challenge1.dart';
 import 'package:latihan1/dialog.dart';
 import 'package:latihan1/Button_widget.dart';
 import 'package:latihan1/Scaffold_widget.dart';
 import 'package:latihan1/image_widget.dart';
+import 'package:latihan1/stack_position1.dart';
+import 'package:latihan1/ui%20sederhana.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,10 +28,14 @@ class MyApp extends StatelessWidget {
       ),
       // home: InputAndSelectionWidget()
       // home: DialogWidget()
-      home: ScaffoldWidget()
+      // home: ScaffoldWidget()
       // home: ImageWidget()
       // home: ButtonWidget()
       // home: Image(image: NetworkImage('https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),),
+      // home: StackPosition()
+      // home: MyTugas(),
+      home: BelajarCoding(),
+
     );
   }
 } 

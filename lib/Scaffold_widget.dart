@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:latihan1/InputAndSelection.dart';
+import 'package:latihan1/Listview_widget.dart';
+import 'package:latihan1/build_widget.dart';
+import 'package:latihan1/date_widget.dart';
 import 'package:latihan1/dialog.dart';
+import 'package:latihan1/row_column.dart';
 
 class ScaffoldWidget extends StatelessWidget {
   const ScaffoldWidget({super.key});
@@ -24,14 +28,18 @@ class ScaffoldWidget extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 234, 31, 31),
         foregroundColor: Color.fromARGB(255, 255, 255, 255),
       ),
-      body: Column(
-        children: const [
-          Center(child: Text("Happy Holiday!!!",style: TextStyle(fontSize: 20,color: Colors.red,),),
-          ),
-          DialogWidget(),
-          InputAndSelectionWidget(),
-        ],
-      ),
+      body: RowColumn(), 
+      // Column(
+      //   children: const [
+      //     Center(child: Text("Happy Shopping!!!",style: TextStyle(fontSize: 20,color: Colors.red,),),
+      //     ),
+      //     DialogWidget(),
+      //     InputAndSelectionWidget(),
+      //     DateWidget(title: "Pilih Tanggal",),
+      //     ListviewWidget(),
+      //     BuildWidget()
+      //   ],
+      // ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Color.fromARGB(255, 234, 31, 31),
         unselectedItemColor: Colors.grey,

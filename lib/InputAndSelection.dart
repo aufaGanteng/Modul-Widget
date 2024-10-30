@@ -17,11 +17,12 @@ class _InputAndSelectionWidgetState extends State<InputAndSelectionWidget> {
         TextField(
           controller: nama,
               obscureText: false,
+              onChanged: (a) {
+                setState(() {});
+              },
               decoration: InputDecoration(
-                
                 border: OutlineInputBorder(),
-                labelText: 
-                'Masukkan Nama',
+                label: Text('Input Nama'),
               ),
             ),
             Text(nama.text),
